@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="564.0" prefWidth="794.0" style="-fx-background-color: #78C4BF;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.csa.controller.BeheerTipsController">
+    <children>
+        <TableView fx:id="tblTips" layoutX="39.0" layoutY="119.0" prefHeight="273.0" prefWidth="710.0">
+            <columns>
+                <TableColumn fx:id="product_naam" prefWidth="232.0" text="Product" />
+                <TableColumn fx:id="tip" prefWidth="247.0" text="Tip" />
+            <TableColumn fx:id="auteur" prefWidth="175.0" text="Auteur" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAdd" layoutX="244.0" layoutY="485.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #A580DB;" text="ADD" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <Button fx:id="btnModify" layoutX="348.0" layoutY="485.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #C41F95;" text="EDIT" textFill="WHITE">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <Button fx:id="btnClose" layoutX="762.0" layoutY="528.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="78.0" style="-fx-background-color: #FF9090;" text="BACK" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <Button fx:id="btnDelete" layoutX="454.0" layoutY="485.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #C41F1F;" text="DELETE" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <ChoiceBox fx:id="choicebox_product" layoutX="70.0" layoutY="439.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+        <Text fill="WHITE" layoutX="70.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCT" wrappingWidth="132.21875">
+            <font>
+                <Font name="Aganè 75" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="231.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIP" wrappingWidth="132.21875">
+            <font>
+                <Font name="Aganè 75" size="20.0" />
+            </font>
+        </Text>
+        <Pane layoutY="-5.0" prefHeight="90.0" prefWidth="794.0" style="-fx-background-color: #59908D;">
+            <children>
+                <Text fill="WHITE" layoutX="256.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEHEER TIPS" wrappingWidth="282.2187552852556">
+                    <font>
+                        <Font name="Aganè 75" size="43.0" />
+                    </font>
+                </Text>
+            </children></Pane>
+      <TextField fx:id="txtfldTip" layoutX="231.0" layoutY="439.0" prefHeight="27.0" prefWidth="324.0" promptText="insert a tip!" style="-fx-background-color: #FFFFFF;" />
+      <ChoiceBox fx:id="choicebox_auteur" layoutX="574.0" layoutY="439.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+      <Text fill="WHITE" layoutX="574.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AUTEUR" wrappingWidth="132.21875">
+         <font>
+            <Font name="Aganè 75" size="20.0" />
+         </font>
+      </Text>
+    </children>
+
+</AnchorPane>

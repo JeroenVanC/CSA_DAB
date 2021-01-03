@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="691.0" prefWidth="802.0" style="-fx-background-color: #78C4BF;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.csa.controller.ProjectMainController">
+   <children>
+      <Pane layoutY="-5.0" prefHeight="90.0" prefWidth="802.0" style="-fx-background-color: #59908D;">
+         <children>
+            <Text fill="WHITE" layoutX="170.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CSA ADMINISTRATIE" textAlignment="CENTER" wrappingWidth="461.03125">
+               <font>
+                  <Font name="Aganè 75" size="43.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fx:id="titeltest" />
+      <ScrollPane layoutX="3.0" layoutY="84.0" prefHeight="608.0" prefWidth="799.0" style="-fx-background-color: #78C4BF;">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="662.0" prefWidth="774.0" style="-fx-background-color: #78C4BF;">
+               <children>
+                  <Button fx:id="btnTips" layoutX="44.0" layoutY="436.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="193.0" style="-fx-background-color: #599078;" text="KOOKTIPS" textFill="WHITE">
+                     <font>
+                        <Font name="Aganè 75" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnBoerderijen" layoutX="44.0" layoutY="47.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="193.0" style="-fx-background-color: #59908D;" text="BOERDERIJEN" textFill="WHITE" AnchorPane.leftAnchor="44.0">
+                     <font>
+                        <Font name="Aganè 75" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnKlanten" layoutX="296.0" layoutY="48.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="193.0" style="-fx-background-color: #59908D;" text="KLANTEN" textFill="WHITE">
+                     <font>
+                        <Font name="Aganè 75" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnInschrijvingen" layoutX="296.0" layoutY="242.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="193.0" style="-fx-background-color: #598B90;" text="INSCHRIJVINGEN" textFill="WHITE">
+                     <font>
+                        <Font name="Aganè 75" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAfhaling" layoutX="537.0" layoutY="241.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="193.0" style="-fx-background-color: #598B90;" text="AFHALING" textFill="WHITE">
+                     <font>
+                        <Font name="Aganè 75" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnActiviteiten" layoutX="44.0" layoutY="241.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="193.0" style="-fx-background-color: #598B90;" text="PRIJZEN" textFill="WHITE">
+                     <font>
+                        <Font name="Aganè 75" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnInhoud" layoutX="291.0" layoutY="436.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="193.0" style="-fx-background-color: #599078;" text="INHOUD PAKKET" textFill="WHITE">
+                     <font>
+                        <Font name="Aganè 75" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnProducten" layoutX="537.0" layoutY="47.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="193.0" style="-fx-background-color: #59908D;" text="PRODUCTEN" textFill="WHITE" AnchorPane.rightAnchor="44.0">
+                     <font>
+                        <Font name="Aganè 75" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnPakket" layoutX="537.0" layoutY="436.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="193.0" style="-fx-background-color: #599078;" text="PAKKET" textFill="WHITE">
+                     <font>
+                        <Font name="Aganè 75" size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

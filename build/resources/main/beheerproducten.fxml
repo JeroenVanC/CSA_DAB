@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="564.0" prefWidth="794.0" style="-fx-background-color: #78C4BF;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.csa.controller.BeheerProductenController">
+    <children>
+      <Pane layoutY="-5.0" prefHeight="90.0" prefWidth="795.0" style="-fx-background-color: #59908D;">
+         <children>
+              <Text fill="WHITE" layoutX="171.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEHEER PRODUCTEN" wrappingWidth="452.21875">
+                  <font>
+                      <Font name="Aganè 75" size="43.0" />
+                  </font>
+              </Text>
+         </children></Pane>
+        <TableView fx:id="tblProducten" layoutX="49.0" layoutY="127.0" prefHeight="278.0" prefWidth="712.0">
+            <columns>
+                <TableColumn fx:id="product_id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="product_naam" prefWidth="75.0" text="naam" />
+                <TableColumn fx:id="product_normal" prefWidth="60.0" text="normaal" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="btnAdd" layoutX="248.0" layoutY="485.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #1FC4B4;" text="ADD" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <Button fx:id="btnModify" layoutX="352.0" layoutY="485.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #C41F95;" text="EDIT" textFill="WHITE">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <Button fx:id="btnClose" layoutX="845.0" layoutY="432.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="78.0" style="-fx-background-color: #FF9090;" text="BACK" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Aganè 75" size="16.0" />
+         </font></Button>
+        <Button fx:id="btnDelete" layoutX="458.0" layoutY="485.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #C41F1F;" text="DELETE" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <TextField fx:id="textfieldNaam" layoutX="273.0" layoutY="440.0" promptText="Naam" style="-fx-background-color: #FFFFFF;" />
+      <CheckBox fx:id="checkboxNormal" layoutX="454.0" layoutY="445.0" mnemonicParsing="false" text="normaal" textFill="WHITE" />
+    </children>
+</AnchorPane>

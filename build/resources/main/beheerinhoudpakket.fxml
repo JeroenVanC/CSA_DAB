@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="564.0" prefWidth="794.0" style="-fx-background-color: #78C4BF;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.kuleuven.csa.controller.BeheerInhoudPakketController">
+    <children>
+        <TableView fx:id="tblInhoud" layoutX="46.0" layoutY="115.0" prefHeight="277.0" prefWidth="708.0">
+            <columns>
+                <TableColumn fx:id="productNaam" prefWidth="168.0" text="Product" />
+                <TableColumn fx:id="pakketNaam" prefWidth="182.0" text="Pakket" />
+                <TableColumn fx:id="aantal" minWidth="0.0" prefWidth="54.0" text="Aantal" />
+                <TableColumn fx:id="inWeek" minWidth="0.0" prefWidth="78.0" text="in week" />
+            <TableColumn fx:id="boerderij" minWidth="0.0" prefWidth="169.0" text="Boerderij" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAdd" layoutX="359.0" layoutY="493.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #A580DB;" text="ADD" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <Button fx:id="btnModify" layoutX="463.0" layoutY="493.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #C41F95;" text="EDIT" textFill="WHITE">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <Button fx:id="btnClose" layoutX="762.0" layoutY="528.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="78.0" style="-fx-background-color: #FF9090;" text="BACK" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <Button fx:id="btnDelete" layoutX="569.0" layoutY="493.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #C41F1F;" text="DELETE" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Aganè 75" size="16.0" />
+            </font></Button>
+        <ChoiceBox fx:id="choicebox_size" layoutX="216.0" layoutY="436.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+        <ChoiceBox fx:id="choicebox_aantal" layoutX="377.0" layoutY="435.0" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" />
+        <ChoiceBox fx:id="choicebox_product" layoutX="55.0" layoutY="437.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+      <ChoiceBox fx:id="choicebox_week" layoutX="482.0" layoutY="434.0" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" />
+        <Text fill="WHITE" layoutX="55.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCT" wrappingWidth="132.21875">
+            <font>
+                <Font name="Aganè 75" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="377.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AANTAL" wrappingWidth="132.21875">
+            <font>
+                <Font name="Aganè 75" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="216.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FORMAAT" wrappingWidth="132.21875">
+            <font>
+                <Font name="Aganè 75" size="20.0" />
+            </font>
+        </Text>
+        <Pane layoutY="-5.0" prefHeight="90.0" prefWidth="794.0" style="-fx-background-color: #59908D;">
+            <children>
+                <Text fill="WHITE" layoutX="120.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEHEER INHOUD PAKKET" wrappingWidth="553.2187552852556">
+                    <font>
+                        <Font name="Aganè 75" size="43.0" />
+                    </font>
+                </Text>
+            </children></Pane>
+      <Text fill="WHITE" layoutX="482.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WEEK" wrappingWidth="132.21875">
+         <font>
+            <Font name="Aganè 75" size="20.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="choicebox_boerderij" layoutX="589.0" layoutY="434.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" />
+      <Text fill="WHITE" layoutX="589.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOERDERIJ" wrappingWidth="132.21875">
+         <font>
+            <Font name="Aganè 75" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="filterField" layoutX="50.0" layoutY="496.0" promptText="filter" />
+      <ChoiceBox fx:id="choicebox_weekFilter" layoutX="225.0" layoutY="496.0" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" />
+      <Text fill="WHITE" layoutX="225.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="filter op week" wrappingWidth="191.21875">
+         <font>
+            <Font name="Aganè 75" size="15.0" />
+         </font>
+      </Text>
+    </children>
+
+</AnchorPane>
